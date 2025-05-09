@@ -1,5 +1,8 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./global.css";
+
 function App() {
-  return <>hi</>;
+  return <>Placeholder</>;
 }
 
 export default App;
