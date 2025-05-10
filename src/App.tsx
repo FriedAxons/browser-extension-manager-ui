@@ -1,8 +1,13 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./global.css";
+import Topbar from "./components/Topbar";
+import "./colormode.css";
 
-function App() {
-  return <>Placeholder</>;
-}
+const App = () => {
+  return (
+    <>
+      <Topbar />
+      <h1>Whereas recognition of the inherit dignity</h1>
+    </>
+  );
+};
 
 export default App;
