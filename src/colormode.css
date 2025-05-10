@@ -3,6 +3,8 @@
   /* Base body colors*/
   --bs-body-bg: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
 
+  /* Topbar */
+
   /* FilterBar */
 
   /* GridCard */
@@ -11,6 +13,9 @@
 [data-bs-theme="dark"] {
   /* Base body colors*/
   --bs-body-bg: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  /* Topbar */
+  
 
   /* FilterBar */
 
