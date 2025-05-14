@@ -3,17 +3,21 @@
   /* Base body colors*/
   --bs-body-bg: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
 
+  /* Box shadow for light components */
+  --bs-bshadow: 0px 2px 2px hsla(225, 23%, 24%, 0.1);
+
   /* Topbar */
   --bs-topbar-bg: hsl(200, 60%, 99%);
-  --bs-topbar-bshadow: 0px 2px 2px hsla(225, 23%, 24%, 0.1);
   --bs-topbar-btn: hsl(0, 0%, 93%);
   --bs-topbar-btn-hover: hsl(0, 0%, 78%);
 
   /* FilterBar */
-  --bs-filterbar-btn-bg: hsl();
-  --bs-filterbar-btn-bg-hover: hsl();
-  --bs-filterbar-btn-active-bg: hsl();
-  --bs-filterbar-btn-color: hsl();
+  --bs-filterbar-btn-bg: hsl(200, 60%, 99%);
+  --bs-filterbar-btn-bg-hover: hsl(0,0%, 93%);
+  --bs-filterbar-btn-hover-color: hsl(226, 11%, 37%);
+  --bs-filterbar-btn-selected-bg: hsl(3, 77%, 44%);
+  --bs-filterbar-btn-selected-color: hsl(200, 60%, 99%);
+  --bs-filterbar-btn-color: hsl(227, 75%, 14%);
 
   /* GridCard */
 }
@@ -73,7 +77,7 @@ body > div {
 /* Topbar */
 .topbar {
   background-color: var(--bs-topbar-bg);
-  box-shadow: var(--bs-topbar-bshadow);
+  box-shadow: var(--bs-bshadow);
 }
 
 .topbar button {
@@ -91,6 +95,7 @@ body > div {
 
 .filterbar .btn-group > .btn {
   padding: 5px 18px;
+  box-shadow: var(--bs-bshadow);
 }
 
 .filterbar .btn-group > .btn:first-child {
