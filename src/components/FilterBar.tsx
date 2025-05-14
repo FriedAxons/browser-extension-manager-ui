@@ -14,7 +14,7 @@ const Filterbar = () => {
   return (
     <div className="filterbar d-flex justify-content-between align-items-center mb-3">
       {/* Left side heading */}
-      <h3 className="mb-0">Extensions List</h3>
+      <h3 className="mb-0" style={{"fontSize": "28px", "fontWeight": "700"}}>Extensions List</h3>
 
       {/* Right side filter toggles */}
       <ButtonGroup aria-label="Extension filters">

@@ -85,20 +85,44 @@ body > div {
 }
 
 /* FilterBar */
-.filterbar .btn {
+.filterbar {
+  margin-top: 3em;
+}
+
+.filterbar .btn-group > .btn {
+  padding: 5px 18px;
+}
+
+.filterbar .btn-group > .btn:first-child {
+  border-radius: 20px;
+}
+
+.filterbar .btn-group > .btn:last-child {
+  border-radius: 20px;
+  margin-right: 0;
+}
+
+.filterbar .btn-group > .btn:not(:first-child):not(:last-child) {
+  border-radius: 20px;
+}
+
+.filterbar .btn-group {
+  display: inline-flex;
+  gap: 0.7rem;
+}
+
+.filterbar .btn-group > .btn {
   background-color: var(--bs-filterbar-btn-bg);
   color: var(--bs-filterbar-btn-color);
   border: none;
-  margin-right: 0.7rem;
   transition: background-color 0.2s ease;
 }
 
-.filterbar .btn:hover {
+.filterbar .btn-group > .btn:hover {
   background-color: var(--bs-filterbar-btn-bg-hover);
-  color: var(--bs-filterbar-btn-color);
 }
 
-.filterbar .btn-check:checked + .btn {
+.filterbar .btn-group .btn-check:checked + .btn {
   background-color: var(--bs-filterbar-btn-selected-bg);
   color: var(--bs-filterbar-btn-selected-color);
 }
