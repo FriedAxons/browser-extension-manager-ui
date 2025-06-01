@@ -46,12 +46,12 @@
   /* GridCard */
 }
 
+/* Global styles */
 @font-face {
   font-family: "Noto Sans";
   src: url("./assets/fonts/static/NotoSans-Regular.ttf") format("truetype");
 }
 
-/* Global styles */
 html,
 body {
   background: var(--bs-body-bg);
@@ -78,6 +78,7 @@ body > div {
   width: 100%;
   height: 37px;
 }
+
 
 /* Topbar */
 .topbar {
@@ -146,5 +147,6 @@ body > div {
 .filterbar .btn-group .btn-check:checked + .btn:hover {
   background-color: var(--bs-filterbar-btn-selected-hover-bg);
 }
+
 
 /* GridCard */
