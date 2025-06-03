@@ -28,11 +28,13 @@
   /* Base body colors*/
   --bs-body-bg: linear-gradient(180deg, #040918 0%, #091540 100%);
 
+
   /* Topbar */
   --bs-topbar-bg: hsl(226, 25%, 17%);
   --bs-topbar-btn: hsl(225, 23%, 24%);
   --bs-topbar-btn-hover: hsl(226, 11%, 37%);
 
+  
   /* FilterBar */
   --bs-filterbar-header-color: hsl(200, 60%, 99%);
   --bs-filterbar-btn-bg: hsl(225, 23%, 24%);
@@ -42,6 +44,7 @@
   --bs-filterbar-btn-selected-bg: hsl(3, 86%, 64%);
   --bs-filterbar-btn-selected-color: hsl(227, 75%, 14%);
   --bs-filterbar-btn-color: hsl(200, 60%, 99%);
+
 
   /* GridCard */
 }
