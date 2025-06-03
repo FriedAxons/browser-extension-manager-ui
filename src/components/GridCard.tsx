@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
@@ -16,16 +17,20 @@ const GridCard: React.FC<GridCardProps> = ({
   isActive,
 }) => (
   <Card className="h-100">
-    <img
-      src={logo}
-      alt={`${name} logo`}
-      style={{ width: "40px", height: "40px", marginRight: "1rem" }}
-    />
     <Card.Body>
+      <div className="d-flex align-items-start">
+        <Image
+          src={logo}
+          alt={`${name} logo`}
+          width={40}
+          height={40}
+          className="me-3"
+        />
+      </div>
       <Card.Title>{name}</Card.Title>
       <Card.Text>{description}</Card.Text>
     </Card.Body>
-    <Card.Footer className="d-flex justify-content-between align-items-center no-border-top">
+    <Card.Footer className="d-flex justify-content-between align-items-center border-0">
       <Button variant="danger" className="rounded-pill btn-sm">
         Remove
       </Button>

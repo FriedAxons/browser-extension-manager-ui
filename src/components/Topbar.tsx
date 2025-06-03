@@ -1,9 +1,9 @@
 import { Navbar, Container, Button } from "react-bootstrap";
-import SunIcon from "/assets/images/icon-sun.svg?react";
-import MoonIcon from "/assets/images/icon-moon.svg?react";
-import LogoIconTextDark from "/assets/images/logo-text-dark.svg?react";
-import LogoIconTextLight from "/assets/images/logo-text-light.svg?react";
-import { useColorMode } from "../hooks/useColorMode";
+import SunIcon from "../assets/images/icon-sun.svg?react";
+import MoonIcon from "../assets/images/icon-moon.svg?react";
+import LogoIconTextDark from "../assets/images/logo-text-dark.svg?react";
+import LogoIconTextLight from "../assets/images/logo-text-light.svg?react";
+import { useColorMode } from "../assets/hooks/useColorMode";
 
 const Topbar: React.FC = () => {
   const [theme, toggleTheme] = useColorMode();

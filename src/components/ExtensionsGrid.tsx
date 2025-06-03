@@ -6,7 +6,7 @@ import extensions from "../../data.json";
 
 const ExtensionsGrid: React.FC = () => (
   <Container>
-    <Row className="g-4">
+    <Row className="g-3">
       {extensions.map((ext, idx) => (
         <Col key={idx} xs={12} sm={6} md={4}>
           <GridCard {...ext} />
