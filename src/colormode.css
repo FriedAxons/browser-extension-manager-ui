@@ -82,6 +82,9 @@ body > div {
   height: 37px;
 }
 
+.card-footer {
+  border-top: none;
+}
 
 /* Topbar */
 .topbar {

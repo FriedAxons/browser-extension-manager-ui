@@ -16,12 +16,16 @@ const GridCard: React.FC<GridCardProps> = ({
   isActive,
 }) => (
   <Card className="h-100">
-    <Card.Img variant="top" src={logo} alt={`${name} logo`} />
+    <img
+      src={logo}
+      alt={`${name} logo`}
+      style={{ width: "40px", height: "40px", marginRight: "1rem" }}
+    />
     <Card.Body>
       <Card.Title>{name}</Card.Title>
       <Card.Text>{description}</Card.Text>
     </Card.Body>
-    <Card.Footer className="d-flex justify-content-between align-items-center">
+    <Card.Footer className="d-flex justify-content-between align-items-center no-border-top">
       <Button variant="danger" className="rounded-pill btn-sm">
         Remove
       </Button>
