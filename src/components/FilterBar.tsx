@@ -12,7 +12,7 @@ const Filterbar = () => {
   ];
 
   return (
-    <div className="filterbar d-flex justify-content-between align-items-center mb-3">
+    <div className="filterbar d-flex justify-content-between align-items-center mb-4">
       {/* Left side heading */}
       <h3 className="filterbar-header">Extensions List</h3>
 

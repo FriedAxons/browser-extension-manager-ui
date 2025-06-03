@@ -26,9 +26,11 @@ const GridCard: React.FC<GridCardProps> = ({
           height={40}
           className="me-3"
         />
+        <div>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>{description}</Card.Text>
+        </div>
       </div>
-      <Card.Title>{name}</Card.Title>
-      <Card.Text>{description}</Card.Text>
     </Card.Body>
     <Card.Footer className="d-flex justify-content-between align-items-center border-0">
       <Button variant="danger" className="rounded-pill btn-sm">

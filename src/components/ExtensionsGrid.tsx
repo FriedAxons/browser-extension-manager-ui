@@ -5,10 +5,10 @@ import GridCard from "./GridCard";
 import extensions from "../../data.json";
 
 const ExtensionsGrid: React.FC = () => (
-  <Container>
-    <Row className="g-3">
+  <Container fluid className="min-vh-100 d-flex flex-column p-0">
+    <Row className="flex-grow-1 g-2">
       {extensions.map((ext, idx) => (
-        <Col key={idx} xs={12} sm={6} md={4}>
+        <Col key={idx} xs={12} sm={6} md={4} lg={3} xl={4} className="mb-3">
           <GridCard {...ext} />
         </Col>
       ))}
