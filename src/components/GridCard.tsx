@@ -16,7 +16,7 @@ const GridCard: React.FC<GridCardProps> = ({
   description,
   isActive,
 }) => (
-  <Card className="h-100">
+  <Card className="h-100 rounded-4">
     <Card.Body>
       <div className="d-flex align-items-start">
         <Image
