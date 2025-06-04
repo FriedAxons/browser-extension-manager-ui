@@ -22,6 +22,7 @@
   --bs-filterbar-btn-color: hsl(227, 75%, 14%);
 
   /* GridCard */
+  --card-bg-color: hsl(200, 60%, 99%);
 }
 
 [data-bs-theme="dark"] {
@@ -47,6 +48,7 @@
 
 
   /* GridCard */
+  --card-bg-color: hsl(226, 25%, 17%);
 }
 
 /* Global styles */
@@ -152,3 +154,10 @@ body > div {
 
 
 /* GridCard */
+.card, .card-footer {
+  background-color: var(--card-bg-color);
+}
+
+.card {
+  box-shadow: var(--bs-bshadow);
+}

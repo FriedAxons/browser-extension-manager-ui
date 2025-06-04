@@ -16,7 +16,7 @@ const GridCard: React.FC<GridCardProps> = ({
   description,
   isActive,
 }) => (
-  <Card className="h-100 rounded-4">
+  <Card className="card h-100 rounded-4">
     <Card.Body>
       <div className="d-flex align-items-start">
         <Image
@@ -32,7 +32,7 @@ const GridCard: React.FC<GridCardProps> = ({
         </div>
       </div>
     </Card.Body>
-    <Card.Footer className="d-flex justify-content-between align-items-center border-0">
+    <Card.Footer className="d-flex justify-content-between align-items-center rounded-4 mb-2 mx-1 border-0">
       <Button variant="danger" className="rounded-pill btn-sm">
         Remove
       </Button>
