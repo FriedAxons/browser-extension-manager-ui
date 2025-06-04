@@ -49,6 +49,9 @@
 
   /* GridCard */
   --card-bg-color: hsl(226, 25%, 17%);
+  
+  --card-btn-bg-color: hsl(226, 25%, 17%);
+  --card-btn-border-color: hsl(226, 11%, 37%);
 }
 
 /* Global styles */
@@ -160,4 +163,11 @@ body > div {
 
 .card {
   box-shadow: var(--bs-bshadow);
+}
+
+
+.card-button {
+  background-color: var(--card-btn-bg-color);
+  border-color: var(--card-btn-border-color);
+  padding: 5px 14px;
 }

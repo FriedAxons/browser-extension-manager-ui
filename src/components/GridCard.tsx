@@ -33,7 +33,7 @@ const GridCard: React.FC<GridCardProps> = ({
       </div>
     </Card.Body>
     <Card.Footer className="d-flex justify-content-between align-items-center rounded-4 mb-2 mx-1 border-0">
-      <Button variant="danger" className="rounded-pill btn-sm">
+      <Button variant="danger" className="card-button rounded-pill btn-sm">
         Remove
       </Button>
       <Form.Check
