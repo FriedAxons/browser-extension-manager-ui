@@ -41,6 +41,7 @@ const GridCard: React.FC<GridCardProps> = ({
         id={`toggle-${name}`}
         label=""
         defaultChecked={isActive}
+        className="custom-switch"
       />
     </Card.Footer>
   </Card>
