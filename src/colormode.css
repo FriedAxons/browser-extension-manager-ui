@@ -53,8 +53,12 @@
   --bs-cardtext-color: hsl(0, 0%, 78%);
   --bs-cardbtn-bg-color: hsl(226, 25%, 17%);
   --bs-btnborder-color: hsl(226, 11%, 37%);
+  --bs-cardbtn-hover-bgcolor: hsl(3, 86%, 64%);
+  --bs-btnborder-onhover-color: hsl(3, 86%, 64%);
+  --bs-cardbtn-hover-textcolor: hsl(227, 75%, 14%);
   --bs-togglecolor-inactive: hsl(226, 11%, 37%);
   --bs-togglecolor-active: hsl(3, 86%, 64%);
+  --bs-onhover-togglecolor: hsl(3, 71%, 56%);
 }
 
 /* Global styles */
@@ -112,7 +116,6 @@ body > div {
 
 .filterbar-header {
   color: var(--bs-filterbar-header-color);
-  margin-bottom: 0;
   font-size: 33px; 
   font-weight: 700;
 }
@@ -182,6 +185,13 @@ body > div {
   padding: 6px 14px;
 }
 
+.card-button:hover {
+  background-color: var(--bs-cardbtn-hover-bgcolor);
+  color: var(--bs-cardbtn-hover-textcolor);
+  border-color: var(--bs-btnborder-onhover-color);
+}
+
+
 .custom-switch .form-check-input {
   width: 2.2rem;
   height: 1.2rem;
@@ -189,12 +199,16 @@ body > div {
   border: none;
   transition: background-color 0.3s;
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='white'/></svg>");
+  cursor: pointer;
+}
+
+.custom-switch .form-check-input:checked:hover {
+  background-color: var(--bs-onhover-togglecolor);
 }
 
 .custom-switch .form-check-input:checked {
   background-color: var(--bs-togglecolor-active);
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='white'/></svg>");  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='white'/></svg>");
-
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='white'/></svg>");  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='white'/></svg>");  
 }
 
 .custom-switch .form-check-input:focus {
