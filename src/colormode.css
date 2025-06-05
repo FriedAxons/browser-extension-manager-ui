@@ -48,10 +48,11 @@
 
 
   /* GridCard */
-  --card-bg-color: hsl(226, 25%, 17%);
-  
-  --card-btn-bg-color: hsl(226, 25%, 17%);
-  --card-btn-border-color: hsl(226, 11%, 37%);
+  --bs-cardbg-color: hsl(226, 25%, 17%);
+  --bs-cardtitle-color: hsl(200, 60%, 99%);
+  --bs-cardtext-color: hsl(0, 0%, 78%);
+  --bs-cardbtn-bg-color: hsl(226, 25%, 17%);
+  --bs-btnborder-color: hsl(226, 11%, 37%);
   --bs-togglecolor-inactive: hsl(226, 11%, 37%);
   --bs-togglecolor-active: hsl(3, 86%, 64%);
 }
@@ -160,18 +161,25 @@ body > div {
 
 /* GridCard */
 .card, .card-footer {
-  background-color: var(--card-bg-color);
+  background-color: var(--bs-cardbg-color);
 }
 
 .card {
   box-shadow: var(--bs-bshadow);
 }
 
+.card-title {
+  color: var(--bs-cardtitle-color);
+}
+
+.card-text {
+  color: var(--bs-cardtext-color);
+}
 
 .card-button {
-  background-color: var(--card-btn-bg-color);
-  border-color: var(--card-btn-border-color);
-  padding: 5px 14px;
+  background-color: var(--bs-cardbtn-bg-color);
+  border-color: var(--bs-btnborder-color);
+  padding: 6px 14px;
 }
 
 .custom-switch .form-check-input {
@@ -191,4 +199,8 @@ body > div {
 
 .custom-switch .form-check-input:focus {
   box-shadow: none;
+}
+
+.card-footer {
+  margin-bottom: 10px;
 }

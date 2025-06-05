@@ -22,17 +22,19 @@ const GridCard: React.FC<GridCardProps> = ({
         <Image
           src={logo}
           alt={`${name} logo`}
-          width={40}
-          height={40}
+          width={60}
+          height={60}
           className="me-3"
         />
         <div>
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>{description}</Card.Text>
+          <Card.Title style={{ fontWeight: "700" }} className="card-title">
+            {name}
+          </Card.Title>
+          <Card.Text className="card-text">{description}</Card.Text>
         </div>
       </div>
     </Card.Body>
-    <Card.Footer className="d-flex justify-content-between align-items-center rounded-4 mb-2 mx-1 border-0">
+    <Card.Footer className="d-flex justify-content-between align-items-center rounded-4 border-0">
       <Button variant="danger" className="card-button rounded-pill btn-sm">
         Remove
       </Button>
