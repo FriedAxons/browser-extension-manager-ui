@@ -54,11 +54,16 @@
   --bs-cardbtn-bg-color: hsl(226, 25%, 17%);
   --bs-btnborder-color: hsl(226, 11%, 37%);
   --bs-cardbtn-hover-bgcolor: hsl(3, 86%, 64%);
+  --bs-cardbtn-focus-bgcolor: hsl(226, 11%, 37%);
+  --bs-cardbtn-focus-outline: hsl(3, 86%, 64%);
+  --bs-cardbtn-focus-textcolor: hsl(200, 60%, 99%);
   --bs-btnborder-onhover-color: hsl(3, 86%, 64%);
+  --bs-cardbtn-focus-bordercolor: hsl(226, 11%, 37%);
   --bs-cardbtn-hover-textcolor: hsl(227, 75%, 14%);
   --bs-togglecolor-inactive: hsl(226, 11%, 37%);
   --bs-togglecolor-active: hsl(3, 86%, 64%);
   --bs-onhover-togglecolor: hsl(3, 71%, 56%);
+  --bs-togglebtn-focus-outline: hsl(3, 86%, 64%);
 }
 
 /* Global styles */
@@ -182,13 +187,21 @@ body > div {
 .card-button {
   background-color: var(--bs-cardbtn-bg-color);
   border-color: var(--bs-btnborder-color);
-  padding: 6px 14px;
+  padding: 6px 15px;
 }
 
 .card-button:hover {
   background-color: var(--bs-cardbtn-hover-bgcolor);
   color: var(--bs-cardbtn-hover-textcolor);
   border-color: var(--bs-btnborder-onhover-color);
+}
+
+.card-footer .card-button:focus {
+  background-color: var(--bs-cardbtn-focus-bgcolor);
+  color: var(--bs-cardbtn-focus-textcolor);
+  border-color: var(--bs-cardbtn-focus-bordercolor); 
+  outline: 2px solid var(--bs-cardbtn-focus-outline);
+  outline-offset: 2.5px;
 }
 
 
@@ -213,6 +226,11 @@ body > div {
 
 .custom-switch .form-check-input:focus {
   box-shadow: none;
+}
+
+.custom-switch .form-check-input:checked:focus {
+  outline: 2px solid var(--bs-togglebtn-focus-outline);
+  outline-offset: 2px;
 }
 
 .card-footer {
